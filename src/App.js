@@ -33,6 +33,7 @@ export default function App() {
     }
 
     useEffect(() => {
+        // setShowAnswers(true)
         let count = 0
         questions.forEach(qstn => {
             qstn.selected_answer !== null &&
@@ -40,7 +41,7 @@ export default function App() {
                 count++
         })
         setCorrectAnswers(count)
-    }, [showAnswers])
+    }, [questions])
 
 
     function checkAnswer() {
@@ -51,6 +52,7 @@ export default function App() {
         setShowStartpage(true)
         setShowAnswers(false)
         setQuestions([])
+        setApi("https://opentdb.com/api.php?amount=5")
     }
 
 
