@@ -102,6 +102,11 @@ select {
     line-height: 1.2rem;
 }
 
+.action-button:active {
+    /* border: 2px solid red; */
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
 .quizPage {
     color: var(--font-clr);
     width: 70vw;

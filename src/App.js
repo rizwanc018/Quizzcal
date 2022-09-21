@@ -12,11 +12,8 @@ export default function App() {
 
     function startQuiz(query) {
         query.category !== "any" && setApi(prev => (prev = prev + `&category=${query.category}`))
-        console.log("category", api)
         query.difficulty !== "any" && setApi(prev => (prev = prev + `&difficulty=${query.difficulty}`))
-        console.log("difficulty", api)
         query.type !== "any" && setApi(prev => (prev = prev + `&type=${query.type}`))
-        console.log("type", api)
         setShowStartpage(false)
     }
 
