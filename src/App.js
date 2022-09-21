@@ -73,7 +73,7 @@ export default function App() {
                     })
                 }))))
         }
-    }, [showStartpage])
+    }, [api,showStartpage])
 
     const quizQuestions = questions.map((qstn, i) => {
         return (
